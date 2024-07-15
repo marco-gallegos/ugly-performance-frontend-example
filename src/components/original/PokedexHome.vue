@@ -1,6 +1,7 @@
 <script setup lang="ts">
 /**
- * the goal is load a main view with the first 35 pokemons from the pokeapi
+ * the goal is load a main view with the first 35 pokemons from the pokeapi using the oficial endpoint.
+ * 
  */
 
 import { ref, onMounted, watch } from "vue";

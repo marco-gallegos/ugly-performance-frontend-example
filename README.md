@@ -18,17 +18,23 @@ bad component `src/components/original/PokedexHome.vue`
 - cls
 - lcp
 
+#### goal
+
+fix all problems.
+
+is almost posibloe to get a 0 on every metric get 99 on performance is possible without adding anything, just refactoring.
+
 #### how to contribute with a solution
 
 - copy the original folder in the same dir with a diferent name
-- choose a diferent name
 - update input on homeview.vue
-- start refactoring :) (dont forget comments to learn about ytour solution)
+- start refactoring :) (dont forget comments to learn about your solution)
 - send a PR including lighthouse evidence
 
 ```shell
 # example using pokedexgallem as my unique name
-cp -r src/components/original src/component/pokedexgallem
+cp -r src/components/original src/components/pokedexgallem
+
 ```
 
 current score on lighthouse
