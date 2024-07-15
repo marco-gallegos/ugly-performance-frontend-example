@@ -1,14 +1,39 @@
 # ugly-performnace-examples
 
-This template should help get you started developing with Vue 3 in Vite.
+This project wants to provide some examples about how do not handle performance in frontend.
 
-## Recommended IDE Setup
+Also i want to include devs solutions so feel free to create a new version solving this issues.
 
-[VSCode](https://code.visualstudio.com/) + [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (and disable Vetur).
+## Examples
 
-## Type Support for `.vue` Imports in TS
+### pokedex main view
 
-TypeScript cannot handle type information for `.vue` imports by default, so we replace the `tsc` CLI with `vue-tsc` for type checking. In editors, we need [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) to make the TypeScript language service aware of `.vue` types.
+this file is implemented poorly to include performance problems on a simple ~30 dataset api call.
+
+bad component `src/components/original/PokedexHome.vue`
+
+#### problems
+
+- bad await handling
+- cls
+- lcp
+
+#### how to contribute with a solution
+
+- copy the original folder in the same dir with a diferent name
+- choose a diferent name
+- update input on homeview.vue
+- start refactoring :) (dont forget comments to learn about ytour solution)
+- send a PR including lighthouse evidence
+
+```shell
+# example using pokedexgallem as my unique name
+cp -r src/components/original src/component/pokedexgallem
+```
+
+current score on lighthouse
+
+![initial example](./public/homeview-originalissues.png)
 
 ## Customize configuration
 
